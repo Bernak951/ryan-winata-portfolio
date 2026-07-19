@@ -1,32 +1,60 @@
 # Changelog
 
-## v0.4.0-alpha
+All notable changes to this project will be documented in this file.
 
-### Package 2.1A – Semantic HTML
+This project follows Semantic Versioning (SemVer) during development.
 
+---
+
+## v0.5.0-alpha
+
+### Added
+
+#### Semantic HTML Foundation
 - Created semantic HTML structure
 - Added accessibility skip link
-- Prepared reusable sections
+- Prepared reusable page sections
 
-### Package 2.1B – Layout System
-
-- Implemented responsive layout system
-- Added CSS design tokens
+#### Responsive Layout System
+- Implemented responsive layout architecture
+- Added reusable CSS design tokens (variables)
 - Created hero grid layout
 - Improved hero description readability
 
-### Package 2.1C – Navigation
-
+#### Floating Navigation
 - Implemented sticky floating navigation
 - Added glassmorphism navigation bar
-- Added smooth hover animations
-- Enabled smooth scrolling
-- Added theme toggle placeholder
+- Added smooth scrolling behavior
+- Added navigation hover animations
+- Prepared theme toggle placeholder
 
-### Package 2.2A – Hero Typography
-
+#### Hero Typography
 - Enhanced hero typography hierarchy
 - Refined hero spacing and readability
 - Added professional hero introduction
-- Improved content hierarchy
-- Prepared hero layout for CTA buttons and profile image
+- Improved visual content hierarchy
+- Prepared hero layout for profile image integration
+
+#### Hero CTA Component
+- Created reusable button component
+- Added primary CTA button
+- Added secondary CTA button
+- Implemented reusable button styles
+- Added button hover animations
+- Improved hero call-to-action section
+
+---
+
+## Upcoming
+
+- Hero profile image
+- Achievement badges
+- Hero animations
+- About section
+- Experience timeline
+- Projects showcase
+- Research & Publications
+- Certifications
+- Contact section
+- Dark mode support
+- Performance optimization

@@ -1,0 +1,90 @@
+/* ==========================================================
+   BUTTON COMPONENT
+   ----------------------------------------------------------
+   Purpose:
+   Reusable button styles used throughout the portfolio.
+   ========================================================== */
+
+
+/* ==========================================================
+   BUTTON WRAPPER
+========================================================== */
+
+.hero-buttons{
+
+    display:flex;
+
+    gap:18px;
+
+    flex-wrap:wrap;
+
+}
+
+
+/* ==========================================================
+   PRIMARY BUTTON
+========================================================== */
+
+.btn{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    text-decoration:none;
+
+    padding:14px 28px;
+
+    border-radius:999px;
+
+    font-weight:600;
+
+    transition:var(--transition-normal);
+
+    cursor:pointer;
+
+}
+
+
+/* Primary */
+
+.btn-primary{
+
+    background:var(--primary);
+
+    color:white;
+
+}
+
+
+.btn-primary:hover{
+
+    transform:translateY(-3px);
+
+    box-shadow:var(--shadow-md);
+
+}
+
+
+/* Secondary */
+
+.btn-secondary{
+
+    border:1px solid var(--border);
+
+    color:var(--text-primary);
+
+    background:white;
+
+}
+
+
+.btn-secondary:hover{
+
+    background:var(--primary);
+
+    color:white;
+
+}
