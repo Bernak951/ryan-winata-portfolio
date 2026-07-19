@@ -7,43 +7,63 @@
  Gunakan variable ini agar maintainable.
 ==========================================================*/
 
-:root{
+:root {
 
-    /* Colors */
+   /* Colors */
 
-    --primary:#0891B2;
+   --primary: #0891B2;
 
-    --background:#F8FAFC;
+   --background: #F8FAFC;
 
-    --surface:#FFFFFF;
+   --surface: #FFFFFF;
 
-    --text-primary:#0F172A;
+   --text-primary: #0F172A;
 
-    --text-secondary:#475569;
+   --text-secondary: #475569;
 
-    --border:#E2E8F0;
-
-
-    /* Typography */
-
-    --font-body:'Inter',sans-serif;
-
-    --font-heading:'Syne',sans-serif;
+   --border: #E2E8F0;
 
 
-    /* Radius */
+   /* Typography */
 
-    --radius-sm:10px;
+   --font-body: 'Inter', sans-serif;
 
-    --radius-md:18px;
-
-    --radius-lg:28px;
+   --font-heading: 'Syne', sans-serif;
 
 
-    /* Shadow */
+   /* Radius */
 
-    --shadow-sm:0 4px 18px rgba(0,0,0,.05);
+   --radius-sm: 10px;
 
-    --shadow-md:0 10px 30px rgba(0,0,0,.08);
+   --radius-md: 18px;
+
+   --radius-lg: 28px;
+
+
+   /* Shadow */
+
+   --shadow-sm: 0 4px 18px rgba(0, 0, 0, .05);
+
+   --shadow-md: 0 10px 30px rgba(0, 0, 0, .08);
+
+   /* Spacing */
+
+   --space-xs: .5rem;
+
+   --space-sm: 1rem;
+
+   --space-md: 2rem;
+
+   --space-lg: 4rem;
+
+   --space-xl: 7rem;
+
+   /* Motion */
+
+   --transition-fast: 200ms ease;
+
+   --transition-normal: 300ms ease;
+
+   --transition-slow: 500ms ease;
 
 }

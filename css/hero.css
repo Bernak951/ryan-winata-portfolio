@@ -1,5 +1,110 @@
+/* ==========================================================
+   HERO SECTION
+   ----------------------------------------------------------
+   Purpose:
+   Main introduction section of the portfolio.
+
+   Contains:
+   - Greeting
+   - Name
+   - Role
+   - Description
+   - CTA Buttons
+   ========================================================== */
+
+
+/* ==========================================================
+   HERO LABEL
+========================================================== */
+
+.hero-label{
+
+    display:inline-block;
+
+    margin-bottom:20px;
+
+    color:var(--primary);
+
+    font-weight:600;
+
+    letter-spacing:2px;
+
+    text-transform:uppercase;
+
+    font-size:.85rem;
+
+}
+
+
+/* ==========================================================
+   NAME
+========================================================== */
+
+.hero-title{
+
+    font-family:var(--font-heading);
+
+    font-size:clamp(4rem,8vw,6.5rem);
+
+    line-height:.92;
+
+    font-weight:800;
+
+    color:var(--text-primary);
+
+    margin-bottom:24px;
+
+}
+
+
+/* ==========================================================
+   ROLE
+========================================================== */
+
+.hero-role{
+
+    font-size:2rem;
+
+    font-weight:700;
+
+    color:var(--text-primary);
+
+    margin-bottom:18px;
+
+}
+
+
+/* ==========================================================
+   TAGLINE
+========================================================== */
+
+.hero-tagline{
+
+    font-size:1rem;
+
+    font-weight:500;
+
+    color:var(--primary);
+
+    margin-bottom:20px;
+
+}
+
+
+/* ==========================================================
+   DESCRIPTION
+========================================================== */
+
 .hero-description{
 
     max-width:620px;
+
+    color:var(--text-secondary);
+
+    line-height:1.8;
+
+    font-size:1.05rem;
+
+    margin-bottom:36px;
 
 }
