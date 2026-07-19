@@ -1,41 +1,119 @@
-/*==========================================================
- Layout
-==========================================================*/
+/* ==========================================================
+   LAYOUT
+   ----------------------------------------------------------
+   Purpose:
+   Global layout system used across the entire portfolio.
+
+   Contains:
+   - Container
+   - Section spacing
+   - Grid system
+   - Hero layout
+   ========================================================== */
+
+
+/* ==========================================================
+   BODY
+========================================================== */
+
+body{
+    background:var(--background);
+    color:var(--text-primary);
+
+    font-family:var(--font-body);
+
+    overflow-x:hidden;
+}
+
+
+/* ==========================================================
+   CONTAINER
+========================================================== */
 
 .container{
 
-width:min(92%,var(--container));
+    width:min(1180px,90%);
 
-margin-inline:auto;
-
-}
-
-section{
-
-padding:120px 0;
+    margin-inline:auto;
 
 }
 
-h1,h2,h3,h4{
 
-font-family:var(--font-heading);
+/* ==========================================================
+   SECTION
+========================================================== */
 
-color:var(--clr-heading);
+.section{
 
-}
-
-h1{
-
-font-size:clamp(4rem,8vw,6rem);
-
-line-height:.95;
+    padding:120px 0;
 
 }
 
-h2{
 
-font-size:clamp(2.5rem,5vw,4rem);
+/* ==========================================================
+   HERO
+========================================================== */
 
-margin-bottom:1rem;
+.hero{
+
+    min-height:100vh;
+
+    display:flex;
+
+    align-items:center;
+
+}
+
+
+.hero-grid{
+
+    display:grid;
+
+    grid-template-columns:1.4fr 0.8fr;
+
+    gap:80px;
+
+    align-items:center;
+
+}
+
+
+/* ==========================================================
+   HERO LEFT
+========================================================== */
+
+.hero-content{
+
+    display:flex;
+
+    flex-direction:column;
+
+}
+
+
+/* ==========================================================
+   HERO RIGHT
+========================================================== */
+
+.hero-stats{
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:24px;
+
+}
+
+
+/* ==========================================================
+   FOOTER
+========================================================== */
+
+.footer{
+
+    padding:40px 0;
+
+    text-align:center;
 
 }

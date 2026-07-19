@@ -9,51 +9,41 @@
 
 :root{
 
-    /* ==============================
-       COLOR SYSTEM
-    ============================== */
+    /* Colors */
 
-    --clr-primary:#0891B2;
-    --clr-primary-hover:#06B6D4;
+    --primary:#0891B2;
 
-    --clr-background:#FFFFFF;
+    --background:#F8FAFC;
 
-    --clr-surface:#F8FAFC;
+    --surface:#FFFFFF;
 
-    --clr-border:#E2E8F0;
+    --text-primary:#0F172A;
 
-    --clr-heading:#0F172A;
+    --text-secondary:#475569;
 
-    --clr-text:#475569;
+    --border:#E2E8F0;
 
-    /* ==============================
-       TYPOGRAPHY
-    ============================== */
 
-    --font-heading:"Syne",sans-serif;
+    /* Typography */
 
-    --font-body:"Inter",sans-serif;
+    --font-body:'Inter',sans-serif;
 
-    /* ==============================
-       RADIUS
-    ============================== */
+    --font-heading:'Syne',sans-serif;
+
+
+    /* Radius */
 
     --radius-sm:10px;
 
     --radius-md:18px;
 
-    --radius-lg:24px;
+    --radius-lg:28px;
 
-    /* ==============================
-       SHADOW
-    ============================== */
 
-    --shadow-soft:0 8px 24px rgba(15,23,42,.08);
+    /* Shadow */
 
-    /* ==============================
-       CONTAINER
-    ============================== */
+    --shadow-sm:0 4px 18px rgba(0,0,0,.05);
 
-    --container:1320px;
+    --shadow-md:0 10px 30px rgba(0,0,0,.08);
 
 }
