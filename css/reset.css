@@ -2,66 +2,66 @@
  RESET
 ==========================================================*/
 
-*{
+* {
 
-margin:0;
+    margin: 0;
 
-padding:0;
+    padding: 0;
 
-box-sizing:border-box;
-
-}
-
-html{
-
-scroll-behavior:smooth;
+    box-sizing: border-box;
 
 }
 
-body{
+html {
 
-font-family:var(--font-body);
-
-background:var(--clr-background);
-
-color:var(--clr-text);
-
-line-height:1.7;
-
-overflow-x:hidden;
+    scroll-behavior: smooth;
 
 }
 
-img{
+body {
 
-display:block;
+    font-family: var(--font-body);
 
-max-width:100%;
+    background: var(--clr-background);
 
-}
+    color: var(--clr-text);
 
-a{
+    line-height: 1.7;
 
-text-decoration:none;
-
-color:inherit;
+    overflow-x: hidden;
 
 }
 
-ul{
+img {
 
-list-style:none;
+    display: block;
+
+    max-width: 100%;
 
 }
 
-button{
+a {
 
-font:inherit;
+    text-decoration: none;
 
-cursor:pointer;
+    color: inherit;
 
-background:none;
+}
 
-border:none;
+ul {
+
+    list-style: none;
+
+}
+
+button {
+
+    font: inherit;
+
+    cursor: pointer;
+
+    background: none;
+
+    border: none;
 
 }
