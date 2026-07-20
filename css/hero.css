@@ -12,47 +12,108 @@
    - CTA Buttons
    ========================================================== */
 
+/* ==========================================================
+   HERO CONTAINER
+   ----------------------------------------------------------
+   Main wrapper of Hero section.
+   Controls spacing between hero and next section.
+========================================================== */
+
+.hero {
+
+    min-height: 100vh;
+
+    display: flex;
+
+    align-items: center;
+
+    padding: 120px 0 80px;
+
+    position: relative;
+
+}
+
+.hero::before {
+
+    content: "";
+
+    position: absolute;
+
+    width: 450px;
+
+    height: 450px;
+
+    border-radius: 50%;
+
+    background: rgba(8, 145, 178, .08);
+
+    filter: blur(90px);
+
+    right: -100px;
+
+    top: 120px;
+
+    z-index: -1;
+
+}
+
+/* ==========================================================
+   HERO GRID
+========================================================== */
+
+.hero-grid {
+
+    display: grid;
+
+    grid-template-columns: 1fr 0.9fr;
+
+    align-items: center;
+
+    gap: 90px;
+
+}
 
 /* ==========================================================
    HERO LABEL
 ========================================================== */
 
-.hero-label{
+.hero-label {
 
-    display:inline-block;
+    display: inline-block;
 
-    margin-bottom:20px;
+    margin-bottom: 20px;
 
-    color:var(--primary);
+    color: var(--primary);
 
-    font-weight:600;
+    font-weight: 600;
 
-    letter-spacing:2px;
+    letter-spacing: 2px;
 
-    text-transform:uppercase;
+    text-transform: uppercase;
 
-    font-size:.85rem;
+    font-size: .85rem;
 
 }
-
 
 /* ==========================================================
    NAME
 ========================================================== */
 
-.hero-title{
+.hero-title {
 
-    font-family:var(--font-heading);
+    font-family: var(--font-heading);
 
-    font-size:clamp(4rem,8vw,6.5rem);
+    font-size: clamp(4rem, 8vw, 6.5rem);
 
-    line-height:.92;
+    letter-spacing: -4px;
 
-    font-weight:800;
+    line-height: .92;
 
-    color:var(--text-primary);
+    font-weight: 800;
 
-    margin-bottom:24px;
+    color: var(--text-primary);
+
+    margin-bottom: 24px;
 
 }
 
@@ -61,15 +122,17 @@
    ROLE
 ========================================================== */
 
-.hero-role{
+.hero-role {
 
-    font-size:2rem;
+    font-size: 2rem;
 
-    font-weight:700;
+    font-weight: 700;
 
-    color:var(--text-primary);
+    color: var(--text-primary);
 
-    margin-bottom:18px;
+    margin-top: 12px;
+
+    margin-bottom: 18px;
 
 }
 
@@ -78,15 +141,15 @@
    TAGLINE
 ========================================================== */
 
-.hero-tagline{
+.hero-tagline {
 
-    font-size:1rem;
+    font-size: 1rem;
 
-    font-weight:500;
+    font-weight: 500;
 
-    color:var(--primary);
+    color: var(--primary);
 
-    margin-bottom:20px;
+    margin-bottom: 20px;
 
 }
 
@@ -95,16 +158,249 @@
    DESCRIPTION
 ========================================================== */
 
-.hero-description{
+.hero-description {
 
-    max-width:620px;
+    max-width: 620px;
 
-    color:var(--text-secondary);
+    color: var(--text-secondary);
 
-    line-height:1.8;
+    line-height: 1.8;
 
-    font-size:1.05rem;
+    font-size: 1.05rem;
 
-    margin-bottom:36px;
+    margin-bottom: 36px;
+
+}
+
+/* ==========================================================
+   HERO LEFT
+========================================================== */
+
+.hero-left {
+
+    display: flex;
+
+    flex-direction: column;
+
+}
+
+/* ==========================================================
+   HERO RIGHT
+========================================================== */
+
+.hero-right {
+
+    background: white;
+
+    border-radius: 28px;
+
+    padding: 32px;
+
+    box-shadow: var(--shadow-md);
+
+    width: 420px;
+
+    justify-self: center;
+
+    border: 1px solid rgba(15, 23, 42, .05);
+
+    animation: fadeUp .8s ease .3s both;
+
+}
+
+.hero-image img {
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    object-position: center 18%;
+
+}
+
+/* ==========================================================
+   HERO STATS
+========================================================== */
+
+.hero-stats {
+
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 28px 36px;
+
+    margin-top: 36px;
+
+}
+
+.stat-card h3 {
+
+    font-size: 2rem;
+
+}
+
+.stat-card {
+
+    transition: var(--transition-normal);
+    min-width: 110px;
+
+}
+
+.stat-card:hover {
+
+    transform: translateY(-4px);
+
+}
+
+.stat-number {
+
+    font-size: 2rem;
+
+    font-weight: 800;
+
+}
+
+.stat-label {
+
+    margin-top: 6px;
+
+    color: var(--text-secondary);
+
+    font-size: .9rem;
+
+}
+
+/* ==========================================================
+   HERO PROFILE IMAGE
+========================================================== */
+
+.hero-image {
+
+    width: 280px;
+    height: 280px;
+
+    margin: auto;
+
+    overflow: hidden;
+
+    position: relative;
+
+    border-radius: 50%;
+
+    border: 6px solid white;
+
+    box-shadow:
+        0 25px 45px rgba(15, 23, 42, .12);
+
+}
+
+.hero-image::after {
+
+    content: "";
+
+    position: absolute;
+
+    inset: -12px;
+
+    border-radius: 50%;
+
+    border: 1px solid rgba(8, 145, 178, .15);
+
+}
+
+.hero-image {
+
+    transition:
+        transform .35s ease,
+        box-shadow .35s ease;
+
+}
+
+.hero-image:hover {
+
+    transform:
+        translateY(-8px) scale(1.02);
+
+    box-shadow:
+        0 20px 45px rgba(15, 23, 42, .12),
+        0 40px 80px rgba(15, 23, 42, .08);
+
+}
+
+/* ==========================================================
+   HERO ANIMATION
+========================================================== */
+
+@keyframes fadeUp {
+
+    from {
+
+        opacity: 0;
+        transform: translateY(30px);
+
+    }
+
+    to {
+
+        opacity: 1;
+        transform: translateY(0);
+
+    }
+
+}
+
+.hero-left>* {
+
+    animation: fadeUp .8s ease both;
+
+}
+
+.hero-left>*:nth-child(1) {
+
+    animation-delay: .1s;
+
+}
+
+.hero-left>*:nth-child(2) {
+
+    animation-delay: .2s;
+
+}
+
+.hero-left>*:nth-child(3) {
+
+    animation-delay: .3s;
+
+}
+
+.hero-left>*:nth-child(4) {
+
+    animation-delay: .4s;
+
+}
+
+.hero-left>*:nth-child(5) {
+
+    animation-delay: .5s;
+
+}
+
+/* ==========================================================
+   HERO BUTTONS
+========================================================== */
+
+.hero-buttons {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 18px;
+
+    margin-top: 32px;
+
+    flex-wrap: wrap;
 
 }
