@@ -1,0 +1,310 @@
+/* ==========================================================
+   EXPERIENCE SECTION
+   ----------------------------------------------------------
+   Purpose:
+   Recruiter-facing professional experience.
+
+   Data-driven:
+   data/experience.json -> app.js -> #experience-list
+
+   Notes:
+   - Reuses design tokens from variables.css.
+   - Follows the existing card visual language (Hero cards).
+   - Responsive-friendly, no framework, no !important.
+   ========================================================== */
+
+
+/* ==========================================================
+   SECTION HEADING
+========================================================== */
+
+.experience-title {
+
+    font-family: var(--font-heading);
+
+    font-size: clamp(2rem, 4vw, 2.75rem);
+
+    font-weight: 800;
+
+    color: var(--text-primary);
+
+    letter-spacing: -1px;
+
+}
+
+
+.experience-subtitle {
+
+    max-width: 620px;
+
+    margin-top: var(--space-sm);
+
+    color: var(--text-secondary);
+
+    font-size: 1.05rem;
+
+    line-height: 1.7;
+
+}
+
+
+/* ==========================================================
+   EXPERIENCE LIST
+========================================================== */
+
+.experience-list {
+
+    display: grid;
+
+    gap: var(--space-md);
+
+    margin-top: var(--space-lg);
+
+}
+
+
+/* ==========================================================
+   EXPERIENCE CARD
+   Mirrors the Hero card treatment:
+   white surface, large radius, soft shadow, subtle border.
+========================================================== */
+
+.experience-card {
+
+    background: var(--surface);
+
+    border: 1px solid var(--border);
+
+    border-radius: var(--radius-lg);
+
+    box-shadow: var(--shadow-sm);
+
+    padding: var(--space-md);
+
+    transition: transform var(--transition-normal),
+        box-shadow var(--transition-normal);
+
+}
+
+
+.experience-card:hover {
+
+    transform: translateY(-4px);
+
+    box-shadow: var(--shadow-md);
+
+}
+
+
+/* ==========================================================
+   CARD HEADER
+========================================================== */
+
+.experience-card-header {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: var(--space-xs);
+
+}
+
+
+.experience-role {
+
+    font-family: var(--font-heading);
+
+    font-size: 1.3rem;
+
+    font-weight: 700;
+
+    color: var(--text-primary);
+
+}
+
+
+.experience-meta {
+
+    display: flex;
+
+    flex-wrap: wrap;
+
+    align-items: center;
+
+    gap: var(--space-xs);
+
+    color: var(--text-secondary);
+
+    font-size: .95rem;
+
+}
+
+
+.experience-company {
+
+    color: var(--primary);
+
+    font-weight: 600;
+
+}
+
+
+/* Separator dots between meta items */
+
+.experience-meta span + span::before {
+
+    content: "•";
+
+    margin-right: var(--space-xs);
+
+    color: var(--border);
+
+}
+
+
+/* ==========================================================
+   SUMMARY
+========================================================== */
+
+.experience-summary {
+
+    margin-top: var(--space-sm);
+
+    color: var(--text-secondary);
+
+    line-height: 1.7;
+
+}
+
+
+/* ==========================================================
+   HIGHLIGHTS
+========================================================== */
+
+.experience-highlights {
+
+    margin-top: var(--space-sm);
+
+    padding-left: 0;
+
+    display: grid;
+
+    gap: var(--space-xs);
+
+}
+
+
+.experience-highlights li {
+
+    position: relative;
+
+    padding-left: 1.4rem;
+
+    color: var(--text-secondary);
+
+    line-height: 1.6;
+
+}
+
+
+.experience-highlights li::before {
+
+    content: "";
+
+    position: absolute;
+
+    left: 0;
+
+    top: .55rem;
+
+    width: 7px;
+
+    height: 7px;
+
+    border-radius: 50%;
+
+    background: var(--primary);
+
+}
+
+
+/* ==========================================================
+   SKILLS / TAGS
+========================================================== */
+
+.experience-skills {
+
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: var(--space-xs);
+
+    margin-top: var(--space-sm);
+
+    padding-left: 0;
+
+}
+
+
+.experience-skill {
+
+    padding: 6px 14px;
+
+    border: 1px solid var(--border);
+
+    border-radius: var(--radius-sm);
+
+    background: var(--background);
+
+    color: var(--text-secondary);
+
+    font-size: .85rem;
+
+    font-weight: 500;
+
+}
+
+
+/* ==========================================================
+   STATE MESSAGES (empty / error fallback)
+========================================================== */
+
+.experience-empty,
+.experience-error {
+
+    margin-top: var(--space-md);
+
+    color: var(--text-secondary);
+
+    font-size: 1rem;
+
+}
+
+
+/* ==========================================================
+   RESPONSIVE
+========================================================== */
+
+@media (max-width: 640px) {
+
+    .experience-card {
+
+        padding: var(--space-sm);
+
+    }
+
+    .experience-role {
+
+        font-size: 1.15rem;
+
+    }
+
+    .experience-list {
+
+        margin-top: var(--space-md);
+
+    }
+
+}

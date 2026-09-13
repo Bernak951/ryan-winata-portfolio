@@ -1,0 +1,63 @@
+[
+  {
+    "company": "Adira Finance",
+    "role": "Management Trainee — IT Business Analytics",
+    "period": "Aug 2026 — Present",
+    "location": "Indonesia",
+    "summary": "Currently developing foundational IT business analytics capabilities through a structured management trainee program.",
+    "highlights": [
+      "Developing foundational business analysis and system analysis capabilities.",
+      "Building understanding of data analytics and its role in business.",
+      "Learning how analytics and technology support business decision-making."
+    ],
+    "skills": [
+      "Business Analysis",
+      "System Analysis",
+      "Data Analytics"
+    ]
+  },
+  {
+    "company": "Prudential Indonesia",
+    "role": "Business Solution System Analyst",
+    "period": "Feb 2026 — Jul 2026",
+    "location": "Indonesia",
+    "summary": "Translated business requirements into structured system solutions and validated software quality across the delivery cycle.",
+    "highlights": [
+      "Performed requirements analysis and prepared user stories for delivery teams.",
+      "Executed software testing and UAT, including defect validation and retesting.",
+      "Carried out API validation and SQL-based data verification.",
+      "Collaborated with technical and business stakeholders."
+    ],
+    "skills": [
+      "Requirements Analysis",
+      "User Stories",
+      "Software Testing",
+      "UAT",
+      "API Validation",
+      "SQL"
+    ]
+  },
+  {
+    "company": "Mandiri Utama Finance",
+    "role": "Software QA / Application Tester",
+    "period": "Feb 2025 — Feb 2026",
+    "location": "Indonesia",
+    "summary": "Ensured software quality through structured testing, defect tracking, and backend data verification.",
+    "highlights": [
+      "Conducted SIT and UAT and developed test scenarios.",
+      "Tracked defects and verified backend data.",
+      "Ran SQL / PL/SQL / PostgreSQL queries for data validation.",
+      "Collaborated with Developers, BA, PMO, and IT Operations using JIRA."
+    ],
+    "skills": [
+      "SIT",
+      "UAT",
+      "Test Scenarios",
+      "Defect Tracking",
+      "SQL",
+      "PL/SQL",
+      "PostgreSQL",
+      "JIRA"
+    ]
+  }
+]
