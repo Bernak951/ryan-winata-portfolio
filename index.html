@@ -38,7 +38,7 @@
 
       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-      <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Syne:wght@600;700;800&display=swap"
+      <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap"
             rel="stylesheet">
 
       <!-- CSS -->
@@ -174,12 +174,44 @@
                                           Explore Projects
                                     </a>
 
-                                    <a href="portfolio/Ryan_Winata_CV.pdf" target="_blank" rel="noopener"
-                                          class="btn btn-secondary">
+                                    <div class="resume-dropdown">
 
-                                          Download Resume
+                                          <button type="button" class="btn btn-secondary resume-dropdown-toggle"
+                                                aria-haspopup="true" aria-expanded="false">
 
-                                    </a>
+                                                Download Resume
+
+                                                <svg class="resume-dropdown-icon" width="14" height="14"
+                                                      viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                                      stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                                                      <polyline points="6 9 12 15 18 9"></polyline>
+                                                </svg>
+
+                                          </button>
+
+                                          <div class="resume-dropdown-menu">
+
+                                                <a href="assets/resume/Ryan_Winata_CV_BA-SA.pdf" target="_blank"
+                                                      rel="noopener">
+                                                      <span class="resume-dropdown-title">Business/System Analyst</span>
+                                                      <span class="resume-dropdown-sub">BA / SA focused resume</span>
+                                                </a>
+
+                                                <a href="assets/resume/Ryan_Winata_CV_QA.pdf" target="_blank"
+                                                      rel="noopener">
+                                                      <span class="resume-dropdown-title">Quality Assurance</span>
+                                                      <span class="resume-dropdown-sub">QA focused resume</span>
+                                                </a>
+
+                                                <a href="assets/resume/Ryan_Winata_CV_DA.pdf" target="_blank"
+                                                      rel="noopener">
+                                                      <span class="resume-dropdown-title">Data Analyst</span>
+                                                      <span class="resume-dropdown-sub">DA focused resume</span>
+                                                </a>
+
+                                          </div>
+
+                                    </div>
 
                               </div>
 
@@ -248,6 +280,7 @@
             </section>
 
             <!-- ======================================================
+HEAD
              EXPERIENCE
              Data-driven: rendered from data/experience.json by js/app.js
         ======================================================= -->
@@ -274,8 +307,130 @@
 
 
             <!-- ======================================================
-             PROJECTS
-        ======================================================= -->
+======================================================
+     ABOUT SECTION
+======================================================= -->
+
+            <section id="about" class="about">
+
+                  <div class="container">
+
+                        <div class="about-grid">
+
+                              <!-- LEFT SIDE -->
+                              <div class="about-content">
+
+                                    <span class="section-label">
+                                          About Me
+                                    </span>
+
+                                    <h2 class="about-title">
+                                          Turning Business Needs Into Reliable Digital Solutions
+                                    </h2>
+
+                                    <p class="about-intro">
+                                          I am a Business Solution System Analyst with hands-on experience
+                                          in business analysis, software quality assurance, API validation,
+                                          SQL database verification, and digital solution delivery across
+                                          finance and insurance industries.
+                                    </p>
+
+                                    <p>
+                                          I enjoy translating business requirements into reliable software
+                                          solutions while ensuring quality through structured testing,
+                                          collaboration, and data-driven decision making.
+                                    </p>
+
+                              </div>
+
+                              <!-- RIGHT SIDE -->
+                              <div class="about-highlights">
+
+                                    <article class="highlight-card">
+                                          <h3>Business Analysis</h3>
+                                          <p>
+                                                Requirement gathering, BRD, user stories,
+                                                process mapping, and business process analysis.
+                                          </p>
+                                    </article>
+
+                                    <article class="highlight-card">
+                                          <h3>Software Testing</h3>
+                                          <p>
+                                                System Integration Testing (SIT), User Acceptance
+                                                Testing (UAT), defect tracking, and validation.
+                                          </p>
+                                    </article>
+
+                                    <article class="highlight-card">
+                                          <h3>API Testing</h3>
+                                          <p>
+                                                REST API validation using Postman, JSON response
+                                                verification, and integration testing.
+                                          </p>
+                                    </article>
+
+                                    <article class="highlight-card">
+                                          <h3>SQL Database</h3>
+                                          <p>
+                                                Oracle SQL, PL/SQL, PostgreSQL, backend data
+                                                verification, and query optimization.
+                                          </p>
+                                    </article>
+
+                                    <article class="highlight-card">
+                                          <h3>Data Analytics</h3>
+                                          <p>
+                                                Data visualization, dashboard development,
+                                                reporting, and business insights.
+                                          </p>
+                                    </article>
+
+                                    <article class="highlight-card">
+                                          <h3>Research</h3>
+                                          <p>
+                                                IEEE publication, machine learning research,
+                                                technical writing, and academic publication.
+                                          </p>
+                                    </article>
+
+                              </div>
+
+                        </div>
+
+                  </div>
+
+            </section>
+
+
+            <!-- ======================================================
+     EXPERIENCE
+     Data-driven: rendered from data/experience.json by js/app.js
+======================================================= -->
+
+            <section id="experience" class="section experience">
+
+                  <div class="container">
+
+                        <h2 class="experience-title">Experience</h2>
+
+                        <p class="experience-subtitle">
+                              Professional experience across finance and insurance, focused on
+                              business analysis, system analysis, and software quality assurance.
+                        </p>
+
+                        <!-- Mount point for dynamically rendered cards -->
+
+                        <div id="experience-list" class="experience-list"></div>
+
+                  </div>
+
+            </section>
+
+
+            <!-- ======================================================
+     PROJECTS
+======================================================= -->
 
             <section id="projects" class="section">
 

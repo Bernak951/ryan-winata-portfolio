@@ -88,3 +88,121 @@
     color:white;
 
 }
+
+/* ==========================================================
+   RESUME DROPDOWN
+========================================================== */
+
+.resume-dropdown{
+
+    position:relative;
+
+}
+
+.resume-dropdown-toggle{
+
+    gap:8px;
+
+    font-family:inherit;
+
+    font-size:1rem;
+
+    border:1px solid var(--border);
+
+}
+
+.resume-dropdown-icon{
+
+    transition:transform .25s ease;
+
+}
+
+.resume-dropdown.open .resume-dropdown-icon{
+
+    transform:rotate(180deg);
+
+}
+
+.resume-dropdown.open .resume-dropdown-toggle{
+
+    background:var(--primary);
+    color:white;
+
+}
+
+.resume-dropdown-menu{
+
+    position:absolute;
+    top:calc(100% + 10px);
+    left:0;
+
+    min-width:260px;
+
+    background:white;
+
+    border-radius:16px;
+
+    border:1px solid rgba(15,23,42,.08);
+
+    box-shadow:var(--shadow-md);
+
+    padding:8px;
+
+    display:flex;
+    flex-direction:column;
+    gap:2px;
+
+    opacity:0;
+    visibility:hidden;
+    transform:translateY(-8px);
+
+    transition:.2s ease;
+
+    z-index:20;
+
+}
+
+.resume-dropdown.open .resume-dropdown-menu{
+
+    opacity:1;
+    visibility:visible;
+    transform:translateY(0);
+
+}
+
+.resume-dropdown-menu a{
+
+    display:flex;
+    flex-direction:column;
+
+    text-decoration:none;
+
+    padding:10px 14px;
+
+    border-radius:10px;
+
+    transition:.2s ease;
+
+}
+
+.resume-dropdown-menu a:hover{
+
+    background:rgba(8,145,178,.08);
+
+}
+
+.resume-dropdown-title{
+
+    font-weight:600;
+    font-size:.92rem;
+    color:var(--text-primary);
+
+}
+
+.resume-dropdown-sub{
+
+    font-size:.78rem;
+    color:var(--text-secondary);
+    margin-top:2px;
+
+}
